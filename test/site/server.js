@@ -31,14 +31,14 @@ http.createServer(function (request, response) {
             contentType = 'audio/wav';
             break;
         case '.pdf':
-        		contentType = 'application/pdf';
-        		break;
+            contentType = 'application/pdf';
+            break;
         case '.doc':
-        		contentType = 'application/msword';
-        		break;
+            contentType = 'application/msword';
+            break;
         case '.docx':
-        		contentType = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
-        		break;
+            contentType = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
+            break;
     }
 
     fs.readFile(filePath, function(error, content) {
