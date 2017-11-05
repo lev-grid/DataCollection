@@ -12,11 +12,11 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "mammoth": "^1.4.2",
+    "normalize-url": "^1.9.1",
     "pdf-text": "^0.4.0",
-    "request": "^2.83.0",
+    "pouchdb": "^6.3.4",
     "simplecrawler": "^1.1.6",
     "tempfile": "^2.0.0",
-    "url-parse": "^1.1.9",
     "word-extractor": "^0.1.4"
   }
 }
