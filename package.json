@@ -13,10 +13,10 @@
     "cheerio": "^1.0.0-rc.2",
     "mammoth": "^1.4.2",
     "normalize-url": "^1.9.1",
-    "pdf-text": "^0.4.0",
     "pouchdb": "^6.3.4",
     "simplecrawler": "^1.1.6",
     "tempfile": "^2.0.0",
+    "textmeta": "0.0.12",
     "word-extractor": "^0.1.4"
   }
 }

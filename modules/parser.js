@@ -1,6 +1,6 @@
 (function() {
 	const cheerio = require('cheerio');
-	const pdfText = require('pdf-text');
+	const textmeta = require('textmeta');
 	const WordExtractor = require("word-extractor");
 	const mammoth = require("mammoth");
 	const fs = require("fs");
@@ -27,10 +27,8 @@
 					resolve(norm($('html').text()));
 					break;
 				case "pdf":
-					pdfText(buffer, function(err, chunks) {
-						if (err) reject(err);
-						else resolve(norm(chunks.join(" ")));
-					});
+					resolve(textmeta.extractFromPDFBuffer(buffer, [])
+						.then(res => norm(res.text)));
 					break;
 				case "doc":
 					var file = tempfile(".doc");

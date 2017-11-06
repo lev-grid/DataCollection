@@ -36,6 +36,8 @@ describe("Module #1 (Parser):", function(){
 					var file = fs.readFileSync(`${path}pdf\\inp${i}.pdf`);
 					return parser.extractText(file, "application/pdf").then(actual => {
 						assert.deepEqual(actual, expected);
+					}).catch(err => {
+						console.log("err");
 					});
 				});
 			}
